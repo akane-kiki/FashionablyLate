@@ -1,0 +1,271 @@
+.content {
+    margin-top: -30px;
+    position: relative;
+}
+
+.header-link {
+    color: #d9c6b5;
+    font-size: 20px;
+    border: 1px solid #d9c6b5;
+    background-color: #f6f6f6;
+    width: 100px;
+    height: 34px;
+    text-decoration: none;
+    text-align: center;
+    position: absolute;
+    top: 40px;
+    right: 100px;
+}
+
+.admin__heading-title {
+    color: #8b7969;
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+}
+
+input,
+select {
+    border: 1px solid #e3ded9;
+    color: #8b7969;
+    height: 50px;
+}
+
+.admin__main {
+    margin: 30px auto 0;
+    width: 80%;
+    color: #8b7969;
+    font-size: 20px;
+}
+
+.search-form {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 0px;
+}
+
+.search-form__input-keyword {
+    background-color: #fbfbfb;
+    text-align: center;
+    min-width: 280px;
+    border: 1px solid #e3ded9;
+}
+
+.search-form__gender,
+.search-form__category {
+    position: relative;
+}
+
+.search-form__gender::after,
+.search-form__category::after {
+    content: "";
+    border-top: 15px solid #beb1a6;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    top: 50%;
+    right: 5%;
+
+    transform: translateY(-50%);
+}
+
+.search-form__gender-select,
+.search-form__category-select {
+    padding: 0 20px;
+    background-color: #f4f4f4;
+    appearance: none;
+}
+
+.search-form__gender-select {
+    min-width: 100px;
+}
+
+.search-form__category-select {
+    min-width: 220px;
+}
+
+.search-form__date {
+    position: relative;
+    padding: 0px 20px;
+    min-width: 140px;
+    background-color: #f4f4f4;
+    border: 1px solid #e3ded9;
+}
+
+.search-form__date::-webkit-calendar-picker-indicator {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    background: transparent;
+}
+
+.search-form__date::after {
+    content: "";
+    border-top: 15px solid #beb1a6;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    top: 50%;
+    right: 5%;
+
+    transform: translateY(-50%);
+}
+
+.search-form__action {
+    display: flex;
+    gap: 20px;
+}
+
+.search-form__search-btn,
+.search-form__reset-btn {
+    color: #ffffff;
+    padding: 0 10px;
+    width: 100px;
+}
+
+.search-form__search-btn {
+    background-color: #8b7969;
+}
+
+.search-form__reset-btn {
+    background-color: #d9c6b5;
+}
+
+.export-form {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.export__btn {
+    background-color: #e1dbd6;
+    color: #8b7969;
+    font-size: 18px;
+    padding: 8px 20px;
+}
+
+.admin__table {
+    margin-top: 20px;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.admin__row {
+    border: 1px solid #e0dfde;
+}
+
+.admin__head,
+.admin__data {
+    padding: 15px 20px;
+}
+
+.admin__head:first-of-type,
+.admin__data:first-of-type {
+    padding-left: 50px;
+}
+
+.admin__head {
+    background-color: #8b7969;
+    color: #fff;
+    font-weight: 400;
+    text-align: left;
+}
+
+.admin__detail-btn {
+    padding: 8px 12px;
+    border: 1px solid #d9c6b5;
+    background-color: #fcfcfc;
+    color: #d9c6b5;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.modal:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+.modal-link {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.modal__main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 50%;
+    border: 1px solid #8b7969;
+    background-color: #fff;
+    transform: translate(-50%, -50%);
+}
+
+.modal__content {
+    position: relative;
+    padding: 0 30px;
+    margin: 0px 30px;
+}
+
+.modal-form__group {
+    display: grid;
+    margin-top: 30px;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+}
+
+.modal-form__label {
+    font-weight: bold;
+}
+
+.admin-btn {
+    display: flex;
+    justify-content: center;
+}
+.modal-form__delete-btn {
+    margin: 30px auto;
+    background-color: #ba370d;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 20px;
+}
+
+.modal__close-btn {
+    position: absolute;
+    top: 32px;
+    right: 32px;
+
+    width: 40px;
+    height: 42px;
+    border: 1px solid #8b7969;
+    border-radius: 50%;
+
+    color: #8b7969;
+    text-align: center;
+    text-decoration: none;
+}

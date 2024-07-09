@@ -1,0 +1,153 @@
+.contact-form__heading {
+    width: 100%;
+}
+.contact-form__title {
+    color: #8b7969;
+    font-size: 35px;
+    font-weight: 400;
+    text-align: center;
+}
+
+.contact-form__main {
+    margin: 30px auto 0;
+    width: 80%;
+    color: #8b7969;
+    font-size: 20px;
+}
+
+.form__group {
+    display: grid;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+}
+
+.form-input {
+    color: #beb1a6;
+    font-size: 14px;
+    background-color: #f4f4f4;
+    height: 38px;
+    padding: 10px 15px;
+    border-style: none;
+    width: 100%;
+}
+
+.form__label--required {
+    color: #ff9494;
+}
+
+.form__input--name,
+.form__input--phone {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.gender-select {
+    display: flex;
+    justify-content: left;
+}
+
+.form__input--gender {
+    margin-right: 60px;
+}
+
+.input-gender {
+    position: absolute;
+    appearance: none;
+}
+
+.gender-text {
+    display: flex;
+    font-size: 18px;
+    align-items: center;
+}
+
+.gender-text::before {
+    content: "";
+    border: 1px solid #8b7969;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.input-gender:checked + .gender-text::before {
+    background: #8b7969;
+}
+
+.input-phone {
+    text-align: center;
+    font-size: 14px;
+}
+
+.form__inputーcategory {
+    position: relative;
+}
+
+.form__inputーcategory::after {
+    content: "";
+    border-top: 15px solid #beb1a6;
+    border-right: 12px solid transparent;
+    border-left: 12px solid transparent;
+    width: 0;
+    height: 0;
+
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    transform: translateY(-50%);
+}
+
+.category-select {
+    padding: 8px 16px;
+    width: 50%;
+    background-color: #f4f4f4;
+    color: #beb1a6;
+    border-style: none;
+    appearance: none;
+}
+
+.form___group-detail {
+    display: grid;
+    align-items: center;
+    margin-top: 30px;
+    grid-template-columns: 1fr 2fr;
+}
+
+.textarea-detail {
+    color: #beb1a6;
+    background-color: #f4f4f4;
+    padding: 10px 15px;
+    height: 129px;
+    border-style: none;
+}
+
+.form__button-submit {
+    display: block;
+    color: #fff;
+    background-color: #82756a;
+    margin: 30px auto 0;
+    padding: 10px 40px;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.form-error {
+    color: #ff9494;
+    grid-column: 2;
+}
+
+.form__group-name .form-error {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-error_first-name,
+.form-error_last-name {
+    width: 100%;
+}
