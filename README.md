@@ -3,7 +3,7 @@
 ## 環境構築
 
 Docker ビルド
-1, git clone url()
+1, git clone url(gh repo clone akane-kiki/fashionablylate)
 2, docker-compose up -d build
 
 \*MySQL は、OS によって起動しない場合があるのでそれぞれの PC に合わせて docker-compose.yml ファイルを編集してください
@@ -30,4 +30,6 @@ edr.png
 
 開発環境: http://localhost/
 phpMyAdmin: http://localhost:8080/
+
+# fashionablylate
 # fashionablylate
